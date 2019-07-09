@@ -24,6 +24,8 @@ fn list_flags(matches: &clap::ArgMatches, path: &std::string::String) {
     run_command("/usr/bin/touch", &format!("{}/{}", path, "flag.md"));
 }
 
+fn set_writeups(matches: &clap::ArgMatches) {}
+
 fn create_standard(path: &std::string::String) {
     let standard_challenges = [
         "crypto",
@@ -85,6 +87,7 @@ fn main() {
             );
         }
         set_format(matches, &path);
+        set_writeups(matches);
         list_flags(matches, &path);
     }
 }
