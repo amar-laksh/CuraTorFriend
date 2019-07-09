@@ -1,0 +1,47 @@
+# File              : cli.yml
+# Author            : Amar Lakshya <amar.lakshya@xaviers.edu.in>
+# Date              : 05.07.2019
+# Last Modified Date: 09.07.2019
+# Last Modified By  : Amar Lakshya <amar.lakshya@xaviers.edu.in>
+name: CuraTorFriend
+version: "0.1.0"
+author: Amar L. <amar.lakshya@xaviers.edu.in>
+about: Just a helpful curator for CTFs
+args:
+    - config:
+        short: c
+        long: config
+        value_name: FILE
+        help: Sets a custom config file
+        takes_value: true
+        required: false
+subcommands:
+    - new:
+        short: n
+        about: can be used to create Writeups, CTF repos etc.
+        takes_value: true
+        args:
+                - name:
+                        short: n
+                        help: Name of the Event
+                        required: true
+                        takes_value: true
+                        index: 1
+                - directory:
+                        short: dir
+                        help: Choose the directory to setup the new CTF repo
+                        required: true
+                        takes_value: true
+                - format:
+                        short: fmt
+                        help: Specifies the format of the CTF, either Jeopardy (Default) or Challenge
+                        takes_value: true
+                - categories:
+                        short: cat
+                        help: Sets the categories in the CTF, either Standard Eg. Rev, Pwn, Net (Default) or Custom
+                        takes_value: true
+                - flags:
+                        short: flags
+                        help: Tries to extract and list all the flags in the CTF repo under a file called flags.md (Default is no)
+                        takes_value: false
+

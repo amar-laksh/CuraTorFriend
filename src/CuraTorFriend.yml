@@ -1,0 +1,27 @@
+# File              : CuraTorFriend.yml
+# Author            : Amar Lakshya <amar.lakshya@xaviers.edu.in>
+# Date              : 05.07.2019
+# Last Modified Date: 09.07.2019
+# Last Modified By  : Amar Lakshya <amar.lakshya@xaviers.edu.in>
+new:
+        - CTF:
+                - Directory
+                - Pre-Command
+                - Format:
+                        - Jeopardy:
+                                - Categories:
+                                        Standard
+                                        Custom
+                                - List Flags:
+                                        directory
+                                - Write ups:
+                                        directory
+                                - Repository:
+                                        - directory
+                                        - curate files:
+                                                true
+                                                false
+                        - Challenge:
+
+               - Post-Command
+

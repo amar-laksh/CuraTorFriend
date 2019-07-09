@@ -1,0 +1,8 @@
+[package]
+name = "CuraTorFriend"
+version = "0.1.0"
+authors = ["amar.lakshya <amar.lakshya@xaviers.edu.in>"]
+edition = "2018"
+
+[dependencies]
+clap = {version = "~2.27.0", features = ["yaml"]}
