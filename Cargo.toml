@@ -1,5 +1,5 @@
 [package]
-name = "CuraTorFriend"
+name = "ctfd"
 version = "0.1.0"
 authors = ["amar.lakshya <amar.lakshya@xaviers.edu.in>"]
 edition = "2018"

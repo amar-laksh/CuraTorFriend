@@ -21,7 +21,7 @@ fn run_command(command: &str, path: &str) -> bool {
 }
 
 fn list_flags(matches: &clap::ArgMatches, path: &std::string::String) {
-    run_command("/usr/bin/touch", &format!("{}/{}", path, "flag.md"));
+    run_command("/usr/bin/touch", &format!("{}/{}", path, "flags.md"));
 }
 
 fn set_writeups(matches: &clap::ArgMatches) {}
